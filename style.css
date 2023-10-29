@@ -1,0 +1,196 @@
+/* GOOGLE FONTS (Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(assets/images/banner.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: none;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-links > ul > li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav-links > ul > li::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgb(218, 44, 44);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-links > ul > li:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-links > ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(237, 236, 232);
+}
+
+.text-box {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  color: rgb(237, 236, 232);
+  text-align: center;
+}
+
+.text-box > h1 {
+  font-size: 62px;
+}
+
+.text-box > p {
+  margin: 10px 0px 40px;
+  font-size: 14px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(237, 236, 232);
+  border: 1px solid rgb(237, 236, 232);
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: rgba(137, 137, 137, 0.3);
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: rgb(218, 44, 44);
+}
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.course > h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(35, 35, 35);
+}
+
+.course > p {
+  color: rgb(35, 35, 35);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 30%;
+  background-color: rgb(255, 239, 239);
+  padding: 20px 12px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.course-col:hover {
+  box-shadow: 0px 0px 20px 0px rgb(0, 0, 0, 0.2);
+}
+
+.course-col > h3 {
+  margin: 0px 0px 10px;
+}
+
+/* MOBILE DEVICES */
+@media (max-width: 700px) {
+  .icon {
+    display: block;
+    color: rgb(237, 236, 232);
+    font-size: 30px;
+    width: 32px;
+    text-align: center;
+  }
+  .icon-menu {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+  }
+
+  .icon-xmark {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: rgb(254, 87, 46);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: right 0.5s ease;
+  }
+
+  .nav-links > ul {
+    padding: 30px;
+  }
+
+  .nav-links > ul > li {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 25px;
+  }
+
+  .text-box > h1 {
+    font-size: 20px;
+  }
+}
