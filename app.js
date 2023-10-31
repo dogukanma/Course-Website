@@ -14,3 +14,23 @@ function hideMenu() {
 
 iconXmark.addEventListener("click", hideMenu);
 iconMenu.addEventListener("click", showMenu);
+
+/***************** This part adds a click me text on top right corner of the images in layer section. ****************/
+// const layer = document.getElementsByClassName("layer");
+// function addClickMe(){
+//   const clickMe = document.createElement("h5");
+//   clickMe.classList.add("click-me");
+//   clickMe.style.color = "black";
+//   clickMe.style.position = "absolute";
+//   clickMe.style.right = "8px";
+//   clickMe.style.top = "5px";
+//   clickMe.style.color = "rgb(35, 35, 35)";
+//   clickMe.innerHTML = "Click me!";
+//   return clickMe;
+// }
+// if (window.innerWidth <= 700) {
+//   for (let i = 0; i < layer.length; i++) {
+//     const clickMe = addClickMe();
+//     layer[i].appendChild(clickMe);
+//   }
+// }

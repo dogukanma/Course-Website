@@ -164,6 +164,8 @@ nav {
 .campus-col > img {
   width: 100%;
   height: 100%;
+  display: block;
+  position: relative;
 }
 
 .layer {
@@ -198,6 +200,73 @@ nav {
 .layer:hover > h3 {
   opacity: 1;
   bottom: 49%;
+}
+
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-col {
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilities-col > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-col > h3 {
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+.facilities-col > p {
+  padding: 0;
+}
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.testimonials > .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.testimonials-col {
+  flex-basis: 45%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  display: flex;
+  background-color: rgb(255, 239, 239);
+}
+
+.testimonials-col > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.testimonials-col > div > h3{
+  font-size: 24px;
+}
+
+.testimonials-col > div > p {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 20px 20px 10px;
 }
 
 /* MOBILE DEVICES */
@@ -258,5 +327,25 @@ nav {
 
   .row {
     flex-direction: column;
+  }
+
+  .facilities-col > h3 {
+    margin-bottom: 7px;
+  }
+
+  .facilities-col > p {
+    margin-bottom: 15px;
+  }
+
+  .testimonials-col {
+    flex-basis: 100%;
+  }
+
+  .testimonials-col > div > p{
+    font-size: 12px;
+  }
+
+  .testimonials-col > div > h3{
+    font-size: 14px;
   }
 }
