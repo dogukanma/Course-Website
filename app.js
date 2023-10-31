@@ -1,6 +1,19 @@
+/* Declaring variables */
 const iconXmark = document.querySelector(".icon-xmark");
 const iconMenu = document.querySelector(".icon-menu");
 const navLinks = document.querySelector(".nav-links");
+const divStars = document.getElementsByClassName("stars");
+
+/* Mockup data from backend */
+const userData = [
+  { firstName: "Christine", lastName: "Berkley", rate: 3.8 },
+  { firstName: "David", lastName: "Byer", rate: 4.7 },
+  { firstName: "John", lastName: "Doe", rate: 4.9 },
+];
+
+userData.forEach((user) => {
+  user.roundedRate = roundAdvanced(user.rate, 0.5);
+});
 
 function showMenu() {
   iconMenu.style.top = "-5px";
@@ -12,8 +25,41 @@ function hideMenu() {
   iconMenu.style.top = "5px";
 }
 
+function roundAdvanced(value, range) {
+  let result = Math.round(value / range) * range;
+  return result;
+}
+
+function showStars() {
+  const fullStar = `<i class="fa-solid fa-star" style="color: rgb(218, 44, 44);"></i>`;
+  const emptyStar = `<i class="fa-regular fa-star" style="color: rgb(218, 44, 44);"></i>`;
+  const halfStar = `<i class="fa-solid fa-star-half-stroke" style="color: rgb(218, 44, 44);"></i>`;
+  for (let i = 0; i < divStars.length; i++) {
+    let score = userData[i].roundedRate;
+    for (let j = 0; j < 5; j++) {
+      if (score >= 1) {
+        divStars[i].innerHTML += fullStar;
+        score--;
+        continue;
+      } else if (score > 0 && score < 1) {
+        divStars[i].innerHTML += halfStar;
+        continue;
+      }
+      divStars[i].innerHTML += emptyStar;
+    }
+  }
+}
+
+/* Event Listeners */
 iconXmark.addEventListener("click", hideMenu);
 iconMenu.addEventListener("click", showMenu);
+
+showStars();
+
+
+
+
+
 
 /***************** This part adds a click me text on top right corner of the images in layer section. ****************/
 // const layer = document.getElementsByClassName("layer");

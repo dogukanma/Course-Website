@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* HEADER SECTION */
 .header {
   min-height: 100vh;
@@ -202,6 +206,7 @@ nav {
   bottom: 49%;
 }
 
+/* FACILITIES SECTION */
 .facilities {
   width: 80%;
   margin: auto;
@@ -230,6 +235,7 @@ nav {
   padding: 0;
 }
 
+/* TESTIMONIALS SECTION */
 .testimonials {
   width: 80%;
   margin: auto;
@@ -250,6 +256,7 @@ nav {
   text-align: left;
   display: flex;
   background-color: rgb(255, 239, 239);
+  border: 1px solid rgb(203, 203, 203);
 }
 
 .testimonials-col > img {
@@ -259,14 +266,74 @@ nav {
   margin: 10px;
 }
 
-.testimonials-col > div > h3{
-  font-size: 24px;
-}
-
 .testimonials-col > div > p {
   font-weight: 400;
   font-size: 16px;
-  margin: 20px 20px 10px;
+  margin: 10px 20px 10px;
+}
+
+.testimonials-col > div > h3{
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.stars{
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* CALL TO ACTION SECTION */
+.cta{
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 100px 0;
+  margin-bottom: 120px;
+  border-radius: 10px;
+}
+
+.cta > h1{
+  color: rgb(237, 236, 232);
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+/* FOOTER SECTION */
+.footer{
+  width: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.footer > h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer > p{
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.footer > div{
+  margin-bottom: 20px;
+}
+
+.footer > div > a{
+  margin: 0 10px;
+  text-decoration: none;
+  color: rgb(218, 44, 44);
+}
+
+.author{
+  color: rgb(28, 28, 28);
+  text-decoration: none;
 }
 
 /* MOBILE DEVICES */
@@ -329,16 +396,22 @@ nav {
     flex-direction: column;
   }
 
-  .facilities-col > h3 {
-    margin-bottom: 7px;
-  }
-
   .facilities-col > p {
     margin-bottom: 15px;
   }
 
+  .facilities-col > h3 {
+    margin-bottom: 7px;
+  }
+
   .testimonials-col {
     flex-basis: 100%;
+  }
+
+  .testimonials-col > img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0px;
   }
 
   .testimonials-col > div > p{
@@ -347,5 +420,26 @@ nav {
 
   .testimonials-col > div > h3{
     font-size: 14px;
+  }
+
+  .cta{
+    padding: 100px 0;
+  }
+
+  .cta > h1{
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .footer > h1{
+    font-size: 16px;
+  }
+
+  #about-us{
+    font-size: 13px;
+    width: 80%;
+    margin: 0 auto 20px;
   }
 }
