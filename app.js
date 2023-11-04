@@ -3,6 +3,7 @@ const iconXmark = document.querySelector(".icon-xmark");
 const iconMenu = document.querySelector(".icon-menu");
 const navLinks = document.querySelector(".nav-links");
 const divStars = document.getElementsByClassName("stars");
+const scrollTop = document.querySelector(".scroll-top");
 
 /* Mockup data from backend */
 const userData = [
@@ -11,12 +12,24 @@ const userData = [
   { firstName: "John", lastName: "Doe", rate: 4.9 },
 ];
 
-userData.forEach((user) => {
-  user.roundedRate = roundAdvanced(user.rate, 0.5);
-});
+function scrollFunction(){
+  let y = window.scrollY;
+  if(y > 0){
+    scrollTop.style.left = "5px"
+    scrollTop.style.opacity = "1";
+  } else{
+    scrollTop.style.left = "-50px"
+    scrollTop.style.opacity = "0";
+  }
+}
+
+function goTop(){
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+}
 
 function showMenu() {
-  iconMenu.style.top = "-5px";
+  iconMenu.style.top = "-50px";
   navLinks.style.right = "0";
 }
 
@@ -29,6 +42,10 @@ function roundAdvanced(value, range) {
   let result = Math.round(value / range) * range;
   return result;
 }
+
+userData.forEach((user) => {
+  user.roundedRate = roundAdvanced(user.rate, 0.5);
+});
 
 function showStars() {
   const fullStar = `<i class="fa-solid fa-star" style="color: rgb(218, 44, 44);"></i>`;
@@ -53,6 +70,8 @@ function showStars() {
 /* Event Listeners */
 iconXmark.addEventListener("click", hideMenu);
 iconMenu.addEventListener("click", showMenu);
+scrollTop.addEventListener("click", goTop)
+window.addEventListener("scroll", scrollFunction);
 
 showStars();
 
