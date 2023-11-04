@@ -477,3 +477,56 @@ nav {
     margin: 0 auto 20px;
   }
 }
+
+/********** ABOUT US PAGE **********/
+
+#header-about-us{
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  url(assets/images/background.jpg);
+  min-height: 60vh;
+}
+
+.about-us{
+  padding: 100px 0;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.about-us-col{
+  flex-basis: 48%;
+}
+
+.about-us-col > h1{
+  font-size: 36px;
+  color: rgb(35, 35, 35);
+  padding-bottom: 10px;
+}
+
+.about-us-col > p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+
+.about-us-col > a {
+  margin-bottom: 40px;
+}
+
+#hero-btn-second{
+  color: rgb(218, 44, 44);
+  font-weight: 600;
+  background-color: rgba(137, 137, 137, 0.1);
+  border: 1px solid rgb(218, 44, 44);
+  transition: 0.3s ease-in-out;
+}
+
+#hero-btn-second:hover{
+  color: rgb(255, 239, 239);
+  background-color: rgb(218, 44, 44, 1);
+}
+
+.about-us-col > img{
+  width: 100%;
+}
