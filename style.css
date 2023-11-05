@@ -7,14 +7,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.scroll-top{
+.scroll-top {
   display: none;
   background-color: rgb(19, 255, 125);
-  position: fixed; 
+  position: fixed;
   bottom: 10px;
   left: -50px;
   opacity: 0;
@@ -29,7 +29,7 @@ html{
   transition: 0.5s ease-in-out;
 }
 
-.fa-arrow-up{
+.fa-arrow-up {
   font-size: 25px;
   color: rgb(35, 35, 35);
 }
@@ -297,19 +297,20 @@ nav {
   margin: 10px 20px 10px;
 }
 
-.testimonials-col > div > h3{
+.testimonials-col > div > h3 {
   font-size: 22px;
   margin-left: 20px;
 }
 
-.stars{
+.stars {
   margin-left: 20px;
   margin-bottom: 5px;
 }
 
 /* CALL TO ACTION SECTION */
-.cta{
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/images/banner2.jpg);
+.cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(assets/images/banner2.jpg);
   background-position: center;
   background-size: cover;
   width: 80%;
@@ -320,14 +321,14 @@ nav {
   border-radius: 10px;
 }
 
-.cta > h1{
+.cta > h1 {
   color: rgb(237, 236, 232);
   margin-bottom: 20px;
   font-size: 36px;
 }
 
 /* FOOTER SECTION */
-.footer{
+.footer {
   width: 80%;
   margin: auto;
   padding-bottom: 20px;
@@ -335,22 +336,22 @@ nav {
   cursor: default;
 }
 
-.footer > h1{
+.footer > h1 {
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.footer > p{
+.footer > p {
   font-size: 13px;
   font-weight: 300;
   margin-bottom: 20px;
 }
 
-.footer > div{
+.footer > div {
   margin-bottom: 20px;
 }
 
-.footer > div > a{
+.footer > div > a {
   margin: 0 15px;
   padding: 7px;
   text-decoration: none;
@@ -358,7 +359,7 @@ nav {
   /* background-color: lightgreen; */
 }
 
-.author{
+.author {
   color: rgb(28, 28, 28);
   text-decoration: none;
   cursor: pointer;
@@ -366,30 +367,30 @@ nav {
 
 /********** ABOUT US PAGE **********/
 
-#header-about-us{
+#header-about-us {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-  url(assets/images/background.jpg);
+    url(assets/images/background.jpg);
   min-height: 60vh;
 }
 
-.about-us{
+.about-us {
   padding: 100px 0;
   width: 80%;
   margin: auto;
   text-align: left;
 }
 
-.about-us-col{
+.about-us-col {
   flex-basis: 48%;
 }
 
-.about-us-col > h1{
+.about-us-col > h1 {
   font-size: 36px;
   color: rgb(35, 35, 35);
   padding-bottom: 10px;
 }
 
-.about-us-col > p{
+.about-us-col > p {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
@@ -400,41 +401,46 @@ nav {
   margin-bottom: 40px;
 }
 
-#hero-btn-second{
+.hero-btn-second {
   color: rgb(218, 44, 44);
   font-weight: 600;
   background-color: rgba(137, 137, 137, 0.1);
   border: 1px solid rgb(218, 44, 44);
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 34px;
+  font-size: 13px;
+  cursor: pointer;
 }
 
-#hero-btn-second:hover{
+.hero-btn-second:hover {
   color: rgb(255, 239, 239);
   background-color: rgb(218, 44, 44, 1);
 }
 
-.about-us-col > img{
+.about-us-col > img {
   width: 100%;
 }
 
 /********** COURSE PAGE **********/
 
 /* FACILITIES SECTION */
-.facilities-course-page{
+.facilities-course-page {
   padding-top: 100px;
   width: 80%;
   margin: auto;
 }
 
-.facilities-course-page{
+.facilities-course-page {
   text-align: center;
 }
 
-.facilities-course-page > p{
+.facilities-course-page > p {
   margin-bottom: 50px;
 }
 
-.facilities-row{
+.facilities-row {
   border-radius: 10px;
   width: 100%;
   display: flex;
@@ -443,53 +449,120 @@ nav {
   padding: 0;
 }
 
-.facilities-img{
+.facilities-img {
   flex-basis: 45%;
 }
 
-.facilities-img > img{
+.facilities-img > img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
 
-.facilities-text{
+.facilities-text {
   flex-basis: 45%;
   padding: 20px;
 }
 
-.facilities-text > h3{
+.facilities-text > h3 {
   margin-bottom: 7px;
 }
 
-.library-row{
-  background: linear-gradient(rgb(255,255,255,0.9), rgb(255,255,255,0.9)), url(assets/images/library.png);
+.library-row {
+  background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)),
+    url(assets/images/library.png);
   background-size: cover;
   background-position: center;
 }
 
-.playground-row{
-  background: linear-gradient(rgb(255,255,255,0.9), rgb(255,255,255,0.9)), url(assets/images/basketball.png);
+.playground-row {
+  background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)),
+    url(assets/images/basketball.png);
   background-size: cover;
   background-position: center;
 }
 
-.cafeteria-row{
-  background: linear-gradient(rgb(255,255,255,0.9), rgb(255,255,255,0.9)), url(assets/images/cafeteria.png);
+.cafeteria-row {
+  background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)),
+    url(assets/images/cafeteria.png);
   background-size: cover;
   background-position: center;
+}
+
+/********** BLOG PAGE **********/
+
+/* BLOG SECTION */
+.blog-row {
+  padding: 100px 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-img {
+  flex-basis: 60%;
+}
+
+.blog-img > img {
+  width: 100%;
+}
+
+.blog-text {
+  flex-basis: 35%;
+}
+
+.blog-text > h1 {
+  background-color: rgb(254, 87, 46);
+  color: rgb(255, 239, 239);
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.blog-text > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+}
+
+.comment {
+  width: 48%;
+  margin-left: 10%;
+  border: 1px solid rgba(137, 137, 137, 0.5);
+  margin-bottom: 100px;
+}
+
+.comment-box {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.comment-box > h3 {
+  margin-bottom: 20px;
+}
+
+.comment-form > input,
+textarea {
+  width: 100%;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  margin-bottom: 20px;
+  padding: 10px 0 10px 10px;
 }
 
 /* MOBILE DEVICES */
 @media (max-width: 700px) {
-  .scroll-top{
+  .scroll-top {
     display: block;
     padding: 7px 5px 3px;
     width: 30px;
     height: 30px;
   }
 
-  .fa-arrow-up{
+  .fa-arrow-up {
     font-size: 25px;
   }
 
@@ -569,59 +642,74 @@ nav {
     margin-right: 0px;
   }
 
-  .testimonials-col > div > p{
+  .testimonials-col > div > p {
     font-size: 12px;
   }
 
-  .testimonials-col > div > h3{
+  .testimonials-col > div > h3 {
     font-size: 14px;
   }
 
-  .cta{
+  .cta {
     padding: 100px 0;
   }
 
-  .cta > h1{
+  .cta > h1 {
     box-sizing: border-box;
     font-size: 20px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
-  .footer > h1{
+  .footer > h1 {
     font-size: 16px;
   }
 
-  #about-us{
+  #about-us {
     font-size: 13px;
     width: 80%;
     margin: 0 auto 20px;
   }
 
-  .about-us-col > h1{
+  .about-us-col > h1 {
     font-size: 24px;
   }
 
-  .facilities-row{
+  .about-us-col > a {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .facilities-row {
     border-radius: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .facilities-img > img{
+  .facilities-img > img {
     height: auto;
   }
 
-  .facilities-text{
+  .facilities-text {
     padding: 7px;
   }
-  
-  .facilities-text > h3{
+
+  .facilities-text > h3 {
     font-size: 18px;
   }
 
-  .facilities-text > p{
+  .facilities-text > p {
     font-size: 14px;
+  }
+
+  .blog-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment {
+    width: 80%;
   }
 }

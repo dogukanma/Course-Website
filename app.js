@@ -12,18 +12,18 @@ const userData = [
   { firstName: "John", lastName: "Doe", rate: 4.9 },
 ];
 
-function scrollFunction(){
+function scrollFunction() {
   let y = window.scrollY;
-  if(y > 0){
-    scrollTop.style.left = "5px"
+  if (y > 0) {
+    scrollTop.style.left = "5px";
     scrollTop.style.opacity = "1";
-  } else{
-    scrollTop.style.left = "-50px"
+  } else {
+    scrollTop.style.left = "-50px";
     scrollTop.style.opacity = "0";
   }
 }
 
-function goTop(){
+function goTop() {
   document.documentElement.scrollTop = 0;
   document.body.scrollTop = 0;
 }
@@ -70,15 +70,10 @@ function showStars() {
 /* Event Listeners */
 iconXmark.addEventListener("click", hideMenu);
 iconMenu.addEventListener("click", showMenu);
-scrollTop.addEventListener("click", goTop)
+scrollTop.addEventListener("click", goTop);
 window.addEventListener("scroll", scrollFunction);
 
 showStars();
-
-
-
-
-
 
 /***************** This part adds a click me text on top right corner of the images in layer section. ****************/
 // const layer = document.getElementsByClassName("layer");
