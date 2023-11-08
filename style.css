@@ -553,6 +553,94 @@ textarea {
   padding: 10px 0 10px 10px;
 }
 
+.comment-form > textarea {
+  resize: none;
+}
+
+/********** CONTACT US PAGE **********/
+
+/* LOCATION SECTION */
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location > iframe {
+  width: 100%;
+  height: 450px;
+}
+
+.contact {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.contact > .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-col {
+  flex-basis: 48%;
+}
+
+.contact-col > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fa-house,
+.fa-phone,
+.fa-envelope {
+  color: rgb(218, 44, 44);
+  font-size: 20px;
+}
+
+.contact-text {
+  margin-left: 18px;
+}
+
+.contact-text > h1 {
+  font-size: 16px;
+  color: rgb(33, 33, 33, 0.9);
+}
+
+.contact-text > p {
+  font-size: 14px;
+  color: rgb(33, 33, 33, 0.9);
+  font-weight: 300;
+}
+
+.contact-col > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-col > form > input {
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid rgb(202, 202, 202);
+  background-color: white;
+}
+
+.contact-col > form > textarea {
+  max-width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(202, 202, 202);
+  background-color: white;
+  resize: none;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.contact-col > form > button {
+  width: 200px;
+}
+
 /* MOBILE DEVICES */
 @media (max-width: 700px) {
   .scroll-top {
@@ -688,8 +776,8 @@ textarea {
     flex-direction: column;
   }
 
-  .facilities-img > img {
-    height: auto;
+  .playground-row > .facilities-img > img {
+    margin-bottom: -10px;
   }
 
   .facilities-text {

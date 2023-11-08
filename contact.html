@@ -1,3 +1,5 @@
+<!-- Reference video: https://www.youtube.com/watch?v=oYRda7UtuhA -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,56 +36,63 @@
         </div>
       </nav>
       <div class="text-box">
-        <h1>Blog</h1>
+        <h1>Contact us</h1>
       </div>
     </section>
 
-    <!-- BLOG SECTION -->
-    <section class="blog">
-      <div class="blog-row">
-        <div class="blog-img">
-          <img src="assets/images/certificate.jpg" alt="" />
-        </div>
-        <div class="blog-text">
-          <h1>Blog Categories</h1>
-          <div>
-            <p>Business Analytics</p>
-            <p>22</p>
-          </div>
-          <div>
-            <p>Data Science</p>
-            <p>35</p>
-          </div>
-          <div>
-            <p>Machine Learning</p>
-            <p>73</p>
-          </div>
-          <div>
-            <p>Computer Science</p>
-            <p>98</p>
-          </div>
-          <div>
-            <p>AutoCAD</p>
-            <p>20</p>
-          </div>
-          <div>
-            <p>Journalism</p>
-            <p>14</p>
-          </div>
-        </div>
-      </div>
+    <!-- LOCATION SECTION -->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064022.3892418942!2d-101.4311592952392!3d41.4129736553844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938dc8b50cfced%3A0xa127900c0ff30ac4!2sNebraska%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1699454538763!5m2!1str!2str"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
 
-    <!-- COMMENT SECTION -->
-    <section class="comment">
-      <div class="comment-box">
-        <h3>Leave a comment</h3>
-        <form class="comment-form">
-          <input type="text" placeholder="Enter name" />
-          <input type="email" placeholder="Enter email" />
-          <textarea rows="5" placeholder="Your comment"></textarea>
-          <button class="hero-btn-second" type="submit">POST COMMENT</button>
-        </form>
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+      <div class="row">
+        <div class="contact-col">
+          <div class="address">
+            <div>
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="contact-text">
+              <h1>XYZ Road, ABC Building</h1>
+              <p>Nebraska, USA</p>
+            </div>
+          </div>
+          <div class="phone">
+            <div>
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h1>+1 (123) 345-2456</h1>
+              <p>Monday to Friday, 9 AM to 5 PM</p>
+            </div>
+          </div>
+          <div class="email">
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h1>info@eduaction.com</h1>
+              <p>Email us your query</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input name="name" type="text" placeholder="Your name" />
+            <input name="email" type="email" placeholder="Your email" />
+            <input name="subject" type="text" placeholder="Your subject" />
+            <textarea rows="5" placeholder="Your message"></textarea>
+            <button type="submit" class="hero-btn-second">Send message</button>
+          </form>
+          <div></div>
+        </div>
       </div>
     </section>
 
